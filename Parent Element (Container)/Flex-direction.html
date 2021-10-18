@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox</title>
+  <!--style-->
+  <style type="text/css" media="all">
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+  }
+  
+  .container .satu {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+  }
+  .container .dua {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+  }
+  .container .tiga {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+  .container-reverse {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: row-reverse;
+  }
+  
+  .container-reverse .empat {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+  }
+  .container-reverse .lima {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+  }
+  .container-reverse .enam {
+    background-color: lavender;
+    width: 100px;
+    height: 100px;
+  }
+  
+  </style>
+  
+
+</head>
+<body>
+  <h1>Flex-direction</h1>
+  <pre>
+    <h2>value = 1. column, 
+       2. row, 
+       3. colum-reverse, 
+       4. row-reverse</h2>
+   </pre>
+   
+   
+   <h1>no-reverse</h1>
+  <div class="container">
+      <div class="satu">1</div> 
+      <div class="dua">2</div> 
+      <div class="tiga">3</div>
+  </div>
+ <hr> 
+ 
+ 
+ <h2>use-reverse</h2>
+  <div class="container-reverse">
+      <div class="empat">4</div> 
+      <div class="lima">5</div> 
+      <div class="enam">6</div>
+   </div>
+</body>
+</html>

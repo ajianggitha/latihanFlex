@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+    <!--style-->
+  <style type="text/css" media="all">
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container,
+  .container2,
+  .container3 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    background-color: #00fffd;
+  }
+  .container2 {
+    align-items: start;
+  }
+  .container3 {
+    align-items: end;
+  }
+  .container div, 
+  .container2 div,
+  .container3 div {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    background-color: rgb(231,231,231);
+  }
+  </style>
+</head>
+<body>
+  <h1>align-items</h1>
+  <h2>center = berada di tengah container</h2>
+  <div class="container">
+    <div>1</div>
+  </div>
+  <h2>start = default/berada di atas container</h2>
+  <div class="container2">
+    <div>2</div>
+  </div>
+  <h2>end = berada di bawah container</h2>
+  <div class="container3">
+    <div>3</div>
+  </div>
+</body>
+</html>
